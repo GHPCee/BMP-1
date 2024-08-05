@@ -172,13 +172,13 @@ GenericEntity : "{E1F14DB52DBFBC57}Prefabs/Weapons/Core/Weapon_Base.et" {
       ""
      }
     }
+    WeaponAnimationComponent "{60B4EA76EB15F6E0}" {
+     Enabled 0
+    }
    }
    WeaponType Rifle
-   IkObstructionEnabled 1
    obstructionTestCharacterOffset 0 0 0
    obstructionTestAddedLength 0
-   obstructionTestBreakingThreshold 0.7
-   ObstructionAlphaThreshold 1
    SoundInt 1030000
    UIInfo WeaponUIInfo "{CC3BA6A2C42F09F4}" {
     Name "2A46"

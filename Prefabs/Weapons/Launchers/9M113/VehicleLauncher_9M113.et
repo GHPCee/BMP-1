@@ -43,6 +43,9 @@ GenericEntity : "{D14EC0B3BFCE1A8D}Prefabs/Weapons/Core/VehicleLauncher_Base_01.
      }
      MagazineTemplate "{8A36D3F6EF94F53D}Prefabs/Weapons/Magazines/9M113/Rocket_9M113_1rnd_Base.et"
     }
+    WeaponAnimationComponent "{60B4EA76EB15F6E0}" {
+     Enabled 0
+    }
    }
   }
  }

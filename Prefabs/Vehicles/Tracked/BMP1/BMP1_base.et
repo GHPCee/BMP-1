@@ -123,11 +123,39 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
    AngularSleepingThreashold 0.5
   }
   SCR_BaseCompartmentManagerComponent "{20FB66C5DCB8DF72}" {
+   DoorInfoList {
+    CompartmentDoorInfo "{6205490D6BCCC825}" {
+     ContextName "driver_hatch_door"
+     EntryPositionInfo PointInfo "{6205490CBFCF8031}" {
+     }
+     ExitPositionInfo PointInfo "{6205490CB06F862B}" {
+     }
+     GetInTeleport 1
+     GetOutTeleport 1
+     FakeDoor 1
+     AccessibilitySettings CompartmentAccessibilityContext "{6205490D644272F7}" {
+     }
+    }
+    CompartmentDoorInfo "{620B0E4B2EDC08AD}" {
+     ContextName "rear_hatch"
+     EntryPositionInfo PointInfo "{620B0E4E6E437FD8}" {
+      PivotID "Root"
+      Offset -0.5237 0 -2.9566
+     }
+     ExitPositionInfo PointInfo "{620B0E4E3B33415B}" {
+      PivotID "Root"
+      Offset -0.5237 0 -2.9566
+     }
+     GetInTeleport 1
+     GetOutTeleport 1
+     FakeDoor 1
+    }
+   }
    CompartmentSlots {
     PilotCompartmentSlot PilotCompartment {
      CompartmentAction SCR_GetInUserAction "{5086DB209BDE8253}" {
       ParentContextList {
-       "driver_hatch"
+       "driver_hatch_door"
       }
      }
      SwitchSeatAction SCR_SwitchSeatAction "{509D56667885A8DC}" {
@@ -145,7 +173,9 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
      PassengerPositionInfo EntitySlotInfo "{A1CB25848A3D93A8}" {
       PivotID "v_driver_idle"
      }
+     SkipCharacterDoorAnimationsFromSeat 1
      DoorInfoList {
+      0
      }
      UIInfo UIInfo "{5E529ED09B647D0F}" {
       Name "#AR-VehiclePosition_Driver"
@@ -1087,9 +1117,10 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
      }
     }
     UserActionContext "{5E529ED09B61754F}" {
-     ContextName "driver_hatch"
+     UIInfo SCR_ActionContextUIInfo "{6205490D4FD02076}" {
+     }
+     ContextName "driver_hatch_door"
      Position PointInfo "{5E529ED09B61EEF3}" {
-      PivotID "v_door_L01"
       Offset -0.76 1.66 1.6
      }
     }

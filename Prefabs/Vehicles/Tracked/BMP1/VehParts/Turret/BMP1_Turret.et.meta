@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{8021A4D1ADFCF506}Prefabs/Vehicles/Tracked/T-72A/VehParts/Turret/BMP1_Turret.et"
+ Name "{8021A4D1ADFCF506}Prefabs/Vehicles/Tracked/BMP1/VehParts/Turret/BMP1_Turret.et"
  Configurations {
   EntityTemplateResourceClass PC {
   }
@@ -10,6 +10,8 @@ MetaFileClass {
   EntityTemplateResourceClass PS4 : PC {
   }
   EntityTemplateResourceClass HEADLESS : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
   }
  }
 }

@@ -35,8 +35,24 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
    }
   }
   SCR_BaseCompartmentManagerComponent "{51ACFBB07A14CFA6}" {
+   DoorInfoList {
+    CompartmentDoorInfo "{6209598E9635499F}" {
+     ContextName "commanderHatch"
+     EntryPositionInfo PointInfo "{6209598E8059FFC6}" {
+      PivotID "v_commander_hatch"
+     }
+     ExitPositionInfo PointInfo "{6209598EB8E8600E}" {
+      PivotID "v_commander_hatch"
+     }
+     GetInTeleport 1
+     GetOutTeleport 1
+     FakeDoor 1
+     StanceChangeOnExit Crouch
+    }
+   }
    CompartmentSlots {
     TurretCompartmentSlot TurretCompartment {
+     CompartmentUniqueName "cmdr_seat"
      CompartmentAction SCR_GetInUserAction "{5086CC2CFDD3A05A}" {
       ParentContextList {
        "commanderHatch"
@@ -47,48 +63,14 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
        "commander_idle"
       }
      }
-     AdditionalActions {
-      SCR_RemoveCasualtyUserAction "{5D56867A46DBE769}" {
-       ParentContextList {
-        "commanderHatch" "commander_idle"
-       }
-      }
-     }
      PassengerPositionInfo EntitySlotInfo "{B1CB25848A3D93A8}" {
       PivotID "v_commander_idle"
      }
-     SeatType 1
+     SeatType 2
      DoorInfoList {
-      CompartmentDoorInfo "{50B917CA9C90BD91}" {
-       ContextName "DriverHatch"
-       EntryPositionInfo PointInfo "{50B917CA96E757AA}" {
-        PivotID ""
-        Offset -2.225 0 1
-        Angles 0 90 0
-       }
-       ExitPositionInfo PointInfo "{5E5EC2E2DA04CFBF}" {
-        PivotID ""
-        Offset -0.5 0.7 1
-        Angles 0 -90 0
-       }
-       GetInTeleport 0
-       GetOutTeleport 0
-       EntryPositionAligning 1
-       SeatPositionAligning 0
-      }
+      0
      }
-     UIInfo UIInfo "{50870A10DCCDED83}" {
-      Name "#AR-VehiclePosition_Commander"
-     }
-     AccessibilitySettings CompartmentAccessibilityContext "{5956EED3CC9A2F3E}" : "{E778E709DFC79857}Prefabs/Vehicles/Wheeled/BTR70/CompartmentAccess_BTR70.conf" {
-     }
-     BaseCoverage 1
-     CanOccupantEquipGadget 1
-     RestrictedItemTypes +{
-     }
-     m_DefaultOccupantData SCR_DefaultOccupantData "{5E5EC2E2DA04CFC4}" {
-      m_sDefaultOccupantPrefab "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
-     }
+     BaseCoverage 0.3
     }
    }
   }
@@ -165,7 +147,6 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
      }
      ADSTime 0
      CameraRecoilAmount 0
-     m_sLayoutResource "{4CE66FA8219D33D7}UI/layouts/Sights/Optic_Default.layout"
      m_sReticleTexture "{458E639FC849F2AA}UI/Textures/Sights/Effects/Reticle_dust2_UI.edds"
      m_bHasIllumination 1
      m_cReticleTextureIllumination 0.814 0.702 0.213 1
@@ -173,7 +154,6 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
      m_fReticleAngularSize 45
      m_fReticlePortion 0.53711
      m_fReticleBaseZoom 2.6
-     m_bIsTurretOptic 1
      m_fObjectiveFov 45
      m_fObjectiveScale 0.77
      m_fVignetteScale 0.847
@@ -181,9 +161,6 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
      m_fMovementDampingSpeed 8
      m_fVignetteMoveSpeed 16
      m_fMotionBlurScale 0
-     m_fRecoilScaleMax 1
-     m_fRecoilTranslationTarget 0.001
-     m_fRecoilScaleTranslation 1
     }
    }
    SignalsSourceAccess SignalsSourceAccessClass "{5E5EC2E2DA04CFD5}" {
