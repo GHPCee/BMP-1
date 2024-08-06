@@ -71,6 +71,9 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
      DoorInfoList {
       0
      }
+     UIInfo SCR_ActionUIInfo "{50870A10DCCDED83}" {
+      Name "#AR-VehiclePosition_Commander"
+     }
      BaseCoverage 0.3
     }
    }
