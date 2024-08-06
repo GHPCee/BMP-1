@@ -127,12 +127,17 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
     CompartmentDoorInfo "{6205490D6BCCC825}" {
      ContextName "driver_hatch_door"
      EntryPositionInfo PointInfo "{6205490CBFCF8031}" {
+      PivotID "Root"
+      Offset -0.7425 1.6674 1.8337
      }
      ExitPositionInfo PointInfo "{6205490CB06F862B}" {
+      PivotID "Root"
+      Offset -0.7425 1.6674 1.8337
      }
      GetInTeleport 1
      GetOutTeleport 1
      FakeDoor 1
+     StanceChangeOnExit Crouch
      AccessibilitySettings CompartmentAccessibilityContext "{6205490D644272F7}" {
      }
     }
@@ -1208,6 +1213,7 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
    }
   }
   VehicleAnimationComponent "{50B803EAA459B0AF}" {
+   AnimGraph "{E5D9CB02597071F5}Assets/Vehicles/Wheeled/BTR70/workspaces/BTR70.agr"
    AnimInjection AnimationAttachmentInfo "{50B803EA8AD25BC8}" {
     AnimGraph "{E5D9CB02597071F5}Assets/Vehicles/Wheeled/BTR70/workspaces/BTR70.agr"
     AnimInstance "{5F52A6DF918B0033}Assets/Vehicles/Wheeled/BTR70/workspaces/BTR_player.asi"
