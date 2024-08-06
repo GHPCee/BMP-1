@@ -110,6 +110,38 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
     }
    }
   }
+  BaseVehicleNodeComponent "{20FB66C5B2237133}" {
+   components {
+    SCR_CarControllerComponent "{20FB66C5BC92275B}" {
+     MaxStartupTime 3.6
+     MaxWantsToStartTime 2
+     AirIntakes {
+      PointInfo "{620C4144BFD9A967}" {
+       Offset 0.5722 1.6722 0.9409
+      }
+      PointInfo "{620C414454FA597E}" {
+       Offset -0.0461 1.6722 0.9409
+      }
+     }
+     MaxLightsTime 2
+     DrowningTime 10
+     ThrottleCurve {
+      2800 0.8 3500 0.5 5000 0
+     }
+     ReverseCurve {
+      1500 0.8 1800 0.5 2300 0
+     }
+     ClutchUncoupleTime 0.4
+     ClutchCoupleTime 0.2
+     ClutchUncoupleRpm 1200
+     ClutchCoupleRpm 1900
+     Latency 1
+     UpShiftRpm 1900
+     DownShiftFactor 0.65
+     DownShiftRpm 1700
+    }
+   }
+  }
   MeshObject "{51DAA09FEFBFC0E7}" {
    Object "{DF59EC98B914811D}Assets/Vehicles/Tracked/BMP1/BMP1_BASE.xob"
    LODFactors {
@@ -194,6 +226,13 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
        "passenger_idle_R01"
       }
      }
+     AdditionalActions {
+      SCR_RemoveCasualtyUserAction "{61089D5E00C44348}" {
+       ParentContextList {
+        "passenger_idle_R01"
+       }
+      }
+     }
      PassengerPositionInfo EntitySlotInfo "{699366C6D607AD06}" {
       PivotID "v_passenger_idle_R01"
      }
@@ -211,6 +250,13 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
        "passenger_idle_R02"
       }
      }
+     AdditionalActions {
+      SCR_RemoveCasualtyUserAction "{61089D5E00C44348}" {
+       ParentContextList {
+        "passenger_idle_R02"
+       }
+      }
+     }
      PassengerPositionInfo EntitySlotInfo "{699366C6D607AD06}" {
       PivotID "v_passenger_idle_R02"
      }
@@ -219,6 +265,13 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
      SwitchSeatAction SCR_SwitchSeatAction "{509D56665850650D}" {
       ParentContextList {
        "passenger_idle_R03"
+      }
+     }
+     AdditionalActions {
+      SCR_RemoveCasualtyUserAction "{61089D5E00C44348}" {
+       ParentContextList {
+        "passenger_idle_R03"
+       }
       }
      }
      PassengerPositionInfo EntitySlotInfo "{699366C6D607AD06}" {
@@ -231,6 +284,13 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
        "passenger_idle_R04"
       }
      }
+     AdditionalActions {
+      SCR_RemoveCasualtyUserAction "{61089D5E00C44348}" {
+       ParentContextList {
+        "passenger_idle_R04"
+       }
+      }
+     }
      PassengerPositionInfo EntitySlotInfo "{699366C6D607AD06}" {
       PivotID "v_passenger_idle_R04"
      }
@@ -239,6 +299,13 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
      SwitchSeatAction SCR_SwitchSeatAction "{509D56665850650D}" {
       ParentContextList {
        "passenger_idle_L01"
+      }
+     }
+     AdditionalActions {
+      SCR_RemoveCasualtyUserAction "{61089D5E00C44348}" {
+       ParentContextList {
+        "passenger_idle_L01"
+       }
       }
      }
      PassengerPositionInfo EntitySlotInfo "{699366C6D607AD06}" {
@@ -252,6 +319,13 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
        "passenger_idle_L02"
       }
      }
+     AdditionalActions {
+      SCR_RemoveCasualtyUserAction "{61089D5E00C44348}" {
+       ParentContextList {
+        "passenger_idle_L02"
+       }
+      }
+     }
      PassengerPositionInfo EntitySlotInfo "{699366C6D607AD06}" {
       PivotID "v_passenger_idle_L02"
      }
@@ -263,6 +337,13 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
        "passenger_idle_L03"
       }
      }
+     AdditionalActions {
+      SCR_RemoveCasualtyUserAction "{61089D5E00C44348}" {
+       ParentContextList {
+        "passenger_idle_L03"
+       }
+      }
+     }
      PassengerPositionInfo EntitySlotInfo "{699366C6D607AD06}" {
       PivotID "v_passenger_idle_L03"
      }
@@ -272,6 +353,13 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
      SwitchSeatAction SCR_SwitchSeatAction "{509D56665850650D}" {
       ParentContextList {
        "passenger_idle_L04"
+      }
+     }
+     AdditionalActions {
+      SCR_RemoveCasualtyUserAction "{61089D5E00C44348}" {
+       ParentContextList {
+        "passenger_idle_L04"
+       }
       }
      }
      PassengerPositionInfo EntitySlotInfo "{699366C6D607AD06}" {
@@ -473,7 +561,6 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
    HydrodynamicScaleAngular 3 2 2
    BoundingBoxScale 0.85 0.6 0.9
    BoundingBoxOffset 0 0.5 0
-   DrawDebug 1
    ThrustPoints {
     0 0.2 -3.4
    }
@@ -1207,8 +1294,6 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
    }
    additionalActions {
     SCR_EngineAction "{5E067791F383D2CC}" : "{FEEF05EC7DFE19F2}Prefabs/Vehicles/Core/Configs/Actions/EngineOnAction.conf" {
-    }
-    SCR_EngineAction "{5E067791F2FBD8E6}" : "{B67160046438840C}Prefabs/Vehicles/Core/Configs/Actions/EngineOffAction.conf" {
     }
    }
   }

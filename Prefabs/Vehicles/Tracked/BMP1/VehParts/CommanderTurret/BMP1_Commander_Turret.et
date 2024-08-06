@@ -42,7 +42,8 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
       PivotID "v_commander_hatch"
      }
      ExitPositionInfo PointInfo "{6209598EB8E8600E}" {
-      PivotID "v_commander_hatch"
+      PivotID "Scene_Root"
+      Offset -0.7439 1.7367 0.8048
      }
      GetInTeleport 1
      GetOutTeleport 1
