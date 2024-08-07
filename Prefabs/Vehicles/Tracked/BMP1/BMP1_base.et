@@ -203,7 +203,12 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
      AdditionalActions {
       SCR_RemoveCasualtyUserAction "{5D528254D8CE5491}" {
        ParentContextList {
-        "driver_idle" "driver_hatch"
+        "driver_idle"
+       }
+      }
+      SCR_RemoveCasualtyUserAction "{61089D5E93B44D65}" {
+       ParentContextList {
+        "driver_hatch_door"
        }
       }
      }
@@ -1188,6 +1193,20 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
      Angles 80.7495 172.12173 0
      MergePhysics 1
      Prefab "{8C29E423099B0C5A}Prefabs/Props/Military/SupplyBox/SupplyPortableContainers/SupplyPortableContainer_01/SupplyPortableContainers_01_medium_Vehicle.et"
+    }
+   }
+   SlotMappers {
+    CompartmentToSlotMapping Turret {
+     SlotName "Turret"
+     Compartments {
+      "PilotCompartment" "Passenger_R01" "Passenger_R02" "Passenger_R03" "Passenger_R04" "Passenger_L01" "Passenger_L02" "Passenger_L03" "Passenger_L04" "TurretCompartment" "cmdr_seat"
+     }
+    }
+    CompartmentToSlotMapping Commander_Turret {
+     SlotName "Commander_Turret"
+     Compartments {
+      "PilotCompartment" "Passenger_R01" "Passenger_R02" "Passenger_R03" "Passenger_R04" "Passenger_L01" "Passenger_L02" "Passenger_L03" "Passenger_L04" "TurretCompartment" "cmdr_seat"
+     }
     }
    }
   }

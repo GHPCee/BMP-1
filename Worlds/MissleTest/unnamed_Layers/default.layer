@@ -7,13 +7,8 @@ Projectile : "{03F06980285261DC}Prefabs/Weapons/Ammo/Ammo_Rocket_9M14.et" {
 GenericEntity : "{0A21DC21B1D23732}Prefabs/Vehicles/Wheeled/BTR70/VehParts/Magazines/VehPart_BTR70_AmmoStorage_PKMT_KVPT.et" {
  coords 13.369 1 240.301
 }
-$grp Tank : "{1DC01AAACFFA8B63}Prefabs/Vehicles/Tracked/BMP1/BMP1_base.et" {
- BMP1_base1 {
-  coords 25.502 1 238.758
- }
- BMP1_base2 {
-  coords 51.566 1 236.631
- }
+Tank BMP1_base1 : "{1DC01AAACFFA8B63}Prefabs/Vehicles/Tracked/BMP1/BMP1_base.et" {
+ coords 25.502 1 238.758
 }
 Tank BMP1P_base1 : "{3868E03D9A4AF186}Prefabs/Vehicles/Tracked/BMP1/BMP1P_base.et" {
  components {
