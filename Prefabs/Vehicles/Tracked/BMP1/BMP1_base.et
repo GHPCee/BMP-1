@@ -1315,6 +1315,12 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       PivotID "v_passenger_idle_R04"
      }
     }
+    UserActionContext "{62182CE5DA0E9EED}" {
+     ContextName "driver_idle"
+     Position PointInfo "{62182CE5FCE18984}" {
+      Offset -0.7257 0.7724 1.5694
+     }
+    }
    }
    additionalActions {
     SCR_EngineAction "{5E067791F383D2CC}" : "{FEEF05EC7DFE19F2}Prefabs/Vehicles/Core/Configs/Actions/EngineOnAction.conf" {

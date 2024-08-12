@@ -198,7 +198,7 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
      ContextName "commander_idle"
      Position PointInfo "{51ACFBB061993925}" {
       PivotID "v_gunner_idle"
-      Offset 0 0.2 0
+      Offset -0.6194 0.3957 1.3841
      }
      Radius 0.4
     }
