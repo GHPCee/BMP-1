@@ -264,6 +264,8 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
      }
     }
     UserActionContext "{5E52AE0A3116CEFF}" {
+     UIInfo SCR_ActionContextUIInfo "{621821A079AD2B98}" {
+     }
      ContextName "gunnerHatch"
      Position PointInfo "{5E52AE0A3116CEFE}" {
       PivotID "v_turret_01"

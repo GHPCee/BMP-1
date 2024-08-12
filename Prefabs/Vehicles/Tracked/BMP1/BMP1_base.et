@@ -166,8 +166,8 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
       PivotID "Root"
       Offset -0.7425 1.6674 1.8337
      }
-     GetInTeleport 1
-     GetOutTeleport 1
+     AlignDuringGetOut 1
+     GetOutAligningTeleport 1
      FakeDoor 1
      StanceChangeOnExit Crouch
      AccessibilitySettings CompartmentAccessibilityContext "{6205490D644272F7}" {
@@ -177,14 +177,17 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
      ContextName "rear_hatch"
      EntryPositionInfo PointInfo "{620B0E4E6E437FD8}" {
       PivotID "Root"
-      Offset -0.5237 0 -2.9566
+      Offset -0.5237 0 -3.3902
      }
      ExitPositionInfo PointInfo "{620B0E4E3B33415B}" {
       PivotID "Root"
-      Offset -0.5237 0 -2.9566
+      Offset -0.5237 0 -3.3902
+      Angles 0 180 0
      }
-     GetInTeleport 1
-     GetOutTeleport 1
+     AlignDuringGetOut 1
+     GetInAligningTeleport 1
+     GetOutAligningTeleport 1
+     GetInSeatAligningOnEvent 1
      FakeDoor 1
     }
    }
@@ -1257,6 +1260,8 @@ Tank : "{8A883ABED22B6E27}Prefabs/Vehicles/Core/Tracked_Base.et" {
      }
     }
     UserActionContext "{5E52AE09F5BB1C23}" {
+     UIInfo SCR_ActionContextUIInfo "{621821A05DDBB518}" {
+     }
      ContextName "rear_hatch"
      Position PointInfo "{5E52AE09CDE47284}" {
       Offset 0.0166 0.985 -2.9
